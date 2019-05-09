@@ -167,8 +167,6 @@ a {
 
   
   .img-card, .img-swish, .img-paypal, .img-invoice, .img-masterpass  {
-    /* position: relative;
-    left: 50%; */
     float: right;
   }
 
@@ -275,7 +273,8 @@ a {
   
   .terms-conditions {
     position: relative;
-    left: 5px;
+    left: 10px;
+    
   }
   
   /* Custom checkbox */
@@ -298,7 +297,6 @@ a {
     width: 20px;
     height: 20px;
     border: 2px solid #0000a0;
-    margin-right: 3px;
     vertical-align: middle;
     margin-top: -2px;
     position: relative;
