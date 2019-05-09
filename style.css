@@ -14,6 +14,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+.container-fluid {
+  margin-right: 0;
+  padding-right: 0;
+}
   
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -159,55 +164,14 @@ a {
     border-radius: 50%;
     padding: 0 5px;
   }
+
   
-  .img-card {
-    position: absolute;
-    top:90px;
-    left: 85%;
-  }
-  
-  .img-swish {
-    position: relative;
-    left: 50%;
+  .img-card, .img-swish, .img-paypal, .img-invoice, .img-masterpass  {
+    /* position: relative;
+    left: 50%; */
+    float: right;
   }
 
-  .img-paypal {
-    position: relative;
-    left: 80%;
-  }
-
-  .img-invoice {
-    position: relative;
-    left: 60%;
-  }
-
-  .img-masterpass {
-    position: relative;
-    left: 25%;
-  }
-
-  @media only screen and (min-width: 600px) {
-    
-    .img-swish {
-      position: relative;
-      left: calc(50% + 10px);
-    }
-  
-    .img-paypal {
-      position: relative;
-      left: calc(50% + 70px);
-    }
-  
-    .img-invoice {
-      position: relative;
-      left: calc(50% + 40px);
-    }
-  
-    .img-masterpass {
-      position: relative;
-      left:calc(50% - 70px);
-    }
-  }
 
   .content-border-select:not(:last-child) {
     border-bottom: 1px #ccc solid;
@@ -311,7 +275,7 @@ a {
   
   .terms-conditions {
     position: relative;
-    left: 10px;
+    left: 5px;
   }
   
   /* Custom checkbox */
