@@ -23,19 +23,29 @@ code {
 a {
     text-decoration: underline;
   }
+
+  .see-details, .hide-details {
+    position: relative;
+    top: 15px;
+  }
   
   /* Header styles */
   .header-container {
     background: #00075A;
-    color: #fff;
   }
-  
-  .header-text {
+
+  .logo {
+    width: 50%;
     padding: 10px;
+    
   }
-  
-  .app-header-label {
-    font-weight: 250;
+
+  @media only screen and (min-width: 600px) {
+    .logo {
+      width: 25%;
+      padding: 10px;
+      margin-left: calc(50% - 200px);
+    }
   }
   
   /* Caret styles */
@@ -43,7 +53,10 @@ a {
   .container-down {
     width: 10px;
     height: 10px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 2px);
+    
   }
   
   .triangle-down {
@@ -66,7 +79,10 @@ a {
   .container-up {
     width: 10px;
     height: 10px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 2px);
+
   }
   
   .triangle-up {
@@ -109,7 +125,7 @@ a {
   .details-hide{
     padding: 20px 0;
   }
-  
+
   
   .card-order {
     background: #00075A;
@@ -144,11 +160,55 @@ a {
     padding: 0 5px;
   }
   
-  img{
-    width: 50%;
-    margin: 7px 0;
+  .img-card {
+    position: absolute;
+    top:90px;
+    left: 85%;
   }
   
+  .img-swish {
+    position: relative;
+    left: 50%;
+  }
+
+  .img-paypal {
+    position: relative;
+    left: 80%;
+  }
+
+  .img-invoice {
+    position: relative;
+    left: 60%;
+  }
+
+  .img-masterpass {
+    position: relative;
+    left: 25%;
+  }
+
+  @media only screen and (min-width: 600px) {
+    
+    .img-swish {
+      position: relative;
+      left: calc(50% + 10px);
+    }
+  
+    .img-paypal {
+      position: relative;
+      left: calc(50% + 70px);
+    }
+  
+    .img-invoice {
+      position: relative;
+      left: calc(50% + 40px);
+    }
+  
+    .img-masterpass {
+      position: relative;
+      left:calc(50% - 70px);
+    }
+  }
+
   .content-border-select:not(:last-child) {
     border-bottom: 1px #ccc solid;
     width: 100%;
@@ -159,11 +219,7 @@ a {
     width: 87%;
     margin-left: 25px;
   }
-  
-  
-  .vat-margin {
-    margin-left: 140px;
-  }
+
   
   .btn {
     background: #00075A;
@@ -190,14 +246,11 @@ a {
   }
   
   .invoice-condition {
-    margin-left: 25px;
-    margin-bottom: 20px;
+    margin-left: 30px;
   }
   
   .lock {
-    width: 12%;
-    padding: 6px;
-  
+    width: 3%;
   }
   
   .masterpass-btn {
@@ -205,6 +258,7 @@ a {
   }
   
   .encrypted {
+    text-align: center;
     font-size: 12px;
   }
   
@@ -222,6 +276,7 @@ a {
   /* Custom radiobutton */
   .radio-button {
     cursor: pointer;
+    margin-bottom: 20px;
   }
   .radio-button input[type="radio"] {
     display: none;
@@ -255,7 +310,8 @@ a {
   }
   
   .terms-conditions {
-    margin-left: 10px;
+    position: relative;
+    left: 10px;
   }
   
   /* Custom checkbox */

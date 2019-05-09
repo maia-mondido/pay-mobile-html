@@ -13,14 +13,10 @@
 
     <!-- Header -->
     <div class="row header-container">
-        <div class="col-xs-12">
-            <h3 class="header-text">
-                Nordea <span class="app-header-label">Connect</span>
-            </h3>
-        </div>
+        <img src="assets/White.svg" alt="card" class="logo"/>
     </div>
     <!-- Order summary -->
-    <div class="card card-order col-xs-12 col-lg-3" >
+    <div class="card card-order col-xs-12 col-sm-7 col-lg-3 mx-auto" >
             <div class="card-body row card-content">
                 <div class="col-xs-3 ">
                     <h6 class="card-title">Order summary</h6>
@@ -81,15 +77,15 @@
                 </div>
             </div>
             <div class="row card-content margin-bottom">
-                <div class="col-xs-5 ">
+                <div class="col-xs-6 ">
                     <small class="special-font">Product name</small>
                 </div>
-                <div class="offset-2">
+                <div class="offset-2 mr-1">
                     <small class="special-font ml-2">1 234,00 SEK</small>
                 </div>
             </div>
             <div class="row card-content">
-                <div class="col-xs-5 ">
+                <div class="col-xs-6 ">
                     <small>Price: 1 234,00 SEK</small>
                 </div>
                 <div class="offset-2 mr-1">
@@ -100,28 +96,28 @@
                 <div class="col-xs-6 ">
                     <small>Qty: 1</small>
                 </div>
-                <div class="vat-margin">
+                <div class="offset-5 mr-2">
                     <small>VAT: 23.00%</small>
                 </div>
             </div> 
             
             <div class="row details">
                 <div class="col-xs-12 ">
-                    <h6 class="card-title">See order details 
+                    <h6 class="see-details">See order details 
                         <span class="container-down"><span class="triangle-down"></span></span>
                     </h6>
                 </div>
             </div> 
             <div class="row details details-hide">
                 <div class="col-xs-12 ">
-                    <h6 class="card-title">Hide order details 
+                    <h6 class="hide-details">Hide order details 
                         <span class="container-up"> <span class="triangle-up"></span></span>
                     </h6>
                 </div>
             </div> 
         </div>
     <!-- Select payment method  -->
-    <div class="card card-select-pay-method radio col-xs-12 col-lg-3" >
+    <div class="card card-select-pay-method radio col-xs-12 col-sm-7 col-lg-3 mx-auto" >
             <div class="card-body row">
                 <div class="col-xs-12">
                     <h5 class="card-title">Select payment method</h5>
@@ -129,17 +125,16 @@
             </div> 
             <!-- Card  -->
 
-            <div class="row payment-method-radio card-content content-border-select">
+            <div class="payment-method-radio card-content content-border-select">
                 <div class="col-xs-12">
                     <label class="radio-button">
                         <input type="radio" name="paymentMethod" class="radio-border" value="card" />
                         <span class="custom-radio"></span>
                         Card
                     </label>
-                    <img src="assets/card.png" alt="card" class="img"/>
+                    <img src="assets/card.svg" alt="card" class="img-card"/>
                 </div>           
-            </div> 
-
+            
             <div class="col-xs-12 " >
                     <div class="form-group">
                         <label html="firstNameLastName"><small>Firstname Lastname</small></label>
@@ -164,8 +159,7 @@
                         </div>
                     </div>
                 
-                    <div class="col-xs-12">
-                    
+                    <div class="col-xs-12 row ml-1">
                         <div class="form-group">
                             <label class="checkbox">
                                 <input type="checkbox" />
@@ -183,20 +177,22 @@
                     </div>
             
                     <input type="submit" class="btn my-2" value="Pay" />
-                    <small id="emailHelp" class="form-text text-muted encrypted ml-3"> 
-                        <img class="lock" src="assets/lock.png" alt="lock"/>Your credit card information is encrypted
+                    <small id="emailHelp" class="form-text text-muted encrypted"> 
+                        <img class="lock mr-1" src="assets/lock.svg" alt="lock"/>Your credit card information is encrypted
                     </small>  
                 </div>
+            </div> 
+
             <!-- Swish -->
 
-            <div class="row payment-method-radio card-content content-border-select">
+            <div class="payment-method-radio card-content content-border-select">
                 <div class="col-xs-12">
                     <label class="radio-button">
                         <input type="radio" name="paymentMethod" class="radio-border" value="swish" />
                         <span class="custom-radio"></span>
                         Swish
                     </label>
-                    <img src="assets/swish.png" alt="swish" class="img"/>
+                    <img src="assets/swish.png" alt="swish" class="img-swish"/>
                 </div>  
                 <label html="mobileNumber" ><small>Your mobile number</small></label>
                 <input type="text" class="form-control" id="mobileNumber" aria-describedby="mobileNumber" placeholder="07X X XXX XXX" />      
@@ -211,7 +207,7 @@
                         <span class="custom-radio"></span>
                         PayPal
                     </label>
-                    <img src="assets/paypal.png" alt="paypal" class="img"/>
+                    <img src="assets/paypal.png" alt="paypal" class="img-paypal"/>
                 </div> 
                 <input type="submit" class="btn my-2" value="Pay with PayPal" />   
           
@@ -225,14 +221,14 @@
                         <span class="custom-radio"></span>
                         Afterpay
                     </label>
-                    <img src="assets/afterpay.png" alt="afterpay" class="img"/>
+                    <img src="assets/afterpay.png" alt="afterpay" class="img-invoice"/>
                 </div> 
                 
                 <!-- Invoice  radio button values -->
 
                 <div class="col-xs-12 " >
                         <div class="form-group">
-                            <div class="row card-content payment-method-radio">
+                            <div class="card-content payment-method-radio">
                                 <div class="col-xs-11 offset-1 invoice-border-select">
                                     <label class="radio-button ">
                                         <input type="radio" name="invoiceMethod" />
@@ -244,7 +240,7 @@
                                     </label>
                                 </div> 
                             </div> 
-                            <div class="row card-content payment-method-radio">
+                            <div class="card-content payment-method-radio">
                                 <div class="col-xs-11 offset-1 invoice-border-select">
                                     <label class="radio-button ">
                                         <input type="radio" name="invoiceMethod" />
@@ -256,7 +252,7 @@
                                     </label>
                                 </div> 
                             </div> 
-                            <div class="row card-content payment-method-radio">
+                            <div class="card-content payment-method-radio">
                                 <div class="col-xs-11 offset-1 invoice-border-select">
                                     <label class="radio-button ">
                                         <input type="radio" name="invoiceMethod" />
@@ -268,7 +264,7 @@
                                     </label>
                                 </div> 
                             </div> 
-                            <div class="row card-content payment-method-radio">
+                            <div class="card-content payment-method-radio">
                                 <div class="col-xs-11 offset-1 invoice-border-select">
                                     <label class="radio-button ">
                                         <input type="radio" name="invoiceMethod" />
@@ -280,7 +276,7 @@
                                     </label>
                                 </div> 
                             </div> 
-                            <div class="row card-content payment-method-radio">
+                            <div class="card-content payment-method-radio">
                                 <div class="col-xs-11 offset-1 invoice-border-select">
                                     <label class="radio-button ">
                                         <input type="radio" name="invoiceMethod" />
@@ -302,7 +298,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-xs-12">
+                        <div class="col-xs-12 row ml-1">
                             <div class="form-group">
                                 <label class="checkbox">
                                     <input type="checkbox" />
@@ -317,20 +313,20 @@
             </div>
             <!-- Masterpass -->
 
-            <div class="row payment-method-radio card-content content-border-select">
+            <div class="payment-method-radio card-content content-border-select">
                 <div class="col-xs-12">
                     <label class="radio-button">
                         <input type="radio" name="paymentMethod" class="radio-border" value="payPal" />
                         <span class="custom-radio"></span>
                         Masterpass
                     </label>
-                    <img src="assets/masterpass.png" alt="masterpass" class="img"/>
+                    <img src="assets/masterpass.png" alt="masterpass" class="img-masterpass"/>
                 </div> 
                 <div class="col-xs-12 offset-2" >
                     <div class="form-group">
                         <img class="masterpass-btn" src="assets/masterpass-btn.png" alt="masterpass"/>
                         <div>
-                            <small>
+                            <small class="form-text">
                                 <a href="#">Learn more about Masterpass</a>
                             </small>
                         </div>
@@ -341,7 +337,7 @@
         </div>
         <!-- Footer -->
 
-        <footer class="footer col-xs-12 col-lg-3">
+        <footer class="footer col-xs-12 col-sm-7 col-lg-3 mx-auto">
                 <p>This payment service is delivered by Nordea Bank Abp. We are responsible for receiving the transaction, 
                         processing and transmission of the transaction to the merchant acquirers.</p>
                 <a href="https://www.nordea.se/">Click here to read more about how your personal data is handled</a>
